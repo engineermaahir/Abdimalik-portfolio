@@ -4,8 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdimalik Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
+  <div class="Header">
+    <h1>Abdimalik's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="hero-section">
+    <div class="text-hero">
+      <h2>Welcome to Abdimalik's Portfolio</h2>
+    <p>I'm Abdimalik, a software engineer from Somalia. I enjoy building Web Applications solutions using cutting-edge technologies.</p>
+    <button class="btn-hero">Get Started</button>
+    </div>
+    <div class="image-hero">
+      <img src="Images/HeroImage.png" alt="Abdimalik">
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+  <div class="Skills" id="skills">
+    <h1>Skills</h1>
+    <div class="row">
+        <i style="color: #ff2500;" class="fa-brands fa-html5"></i>
+        <i style="color: #1386f9;" class="fa-brands fa-css3"></i>
+        <i style="color: #6f0362;" class="fa-brands fa-bootstrap"></i>
+        <i style="color: #fad903;" class="fa-brands fa-js"></i>
+        <i style="color: #0393fa;" class="fa-brands fa-react"></i>
+        <i style="color: #6373f0;" class="fa-brands fa-php"></i>
+        <i style="color: #24f043;" class="fa-brands fa-node"></i>
+    </div>
+  </div>
+  <div class="Project" id="projects">
+    <h1>Projects</h1>
+    <div class="row">
+      <div class="column">
+        <img src="Images/Project1.png" alt="Project 1">
+        <h3>Note Clone</h3>
+        <a href="https://engineermaahir.github.io/note-clone/">Look it</a>
+      </div>
+      <div class="column">
+        <img src="Images/Project2.png" alt="Project 2">
+        <h3>Calculator</h3>
+        <a href="https://engineermaahir.github.io/Calculator/">Look it</a>
+      </div>
+      <div class="column">
+        <img src="Images/Project3.png" alt="Project 2">
+        <h3>Form validation</h3>
+        <a href="https://engineermaahir.github.io/form-validation/">Look it</a>
+      </div>
+    </div>
+  </div>
+  <div class="contact" id="contact">
+    <h1 class="co">Contact Us</h1>
+    <div class="container">
+      <div class="left-panel">
+          <h2>GINYARD INTERNATIONAL CO.</h2>
+          <h1>JOIN US AND TRANSFORM YOUR DIGITAL JOURNEY!</h1>
+          <p>Create your account in minutes and unlock access to premium services.</p>
+          <p class="small-text">By registering, you agree to receive occasional updates and offers from us. You can unsubscribe at any time.</p>
+      </div>
+      <div class="right-panel">
+          <form>
+              <div class="form-group">
+                  <input type="text" placeholder="First Name" required>
+                  <input type="text" placeholder="Last Name" required>
+              </div>
+              <input type="email" placeholder="Email Address" required>
+              <div class="form-group">
+                  <input type="text" placeholder="Phone Number" required>
+                  <input type="text" placeholder="Country" required>
+              </div>
+              <div class="form-group">
+                  <input type="password" placeholder="Password" required>
+                  <input type="password" placeholder="Repeat Password" required>
+              </div>
+              <button type="submit">REGISTER NOW!</button>
+              <p class="login-text">Already have an account? <a href="#">Log In Here</a></p>
+          </form>
+      </div>
+  </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+        <p>© 2025 YourWebsite. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

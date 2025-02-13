@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+  position: sticky;
+  top: 0;
+  background: #b2afaf;
+}
+
+.Header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.Header ul {
+  list-style-type: none;
+}
+.Header ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.Header ul li::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #7a2002;
+  margin: auto;
+}
+.Header ul li:hover::after{
+  width: 100%;
+  transition: 1s;
+}
+
+.Header ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* End Header Section */
+
+.hero-section{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.hero-section .text-hero{
+  width: 50%;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.hero-section h2{
+  font-size: 2.5rem;
+  color: #444;
+}
+
+.hero-section p{
+  font-size: 1.2rem;
+  color: #777;
+  line-height: 1.5;
+  padding-right: 70px;
+}
+.hero-section .btn-hero{
+  background-color: #e73f07;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.image-hero{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.image-hero img{
+  width: 100%;
+}
+
+.Skills{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Skills h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 3%;
+  flex-wrap: wrap;
+}
+.row i{
+  font-size: 70px;
+}
+.Project{
+  height: 100vh;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.column{
+  width: 400px;
+  height: 350px;
+  background-color: #d2d0d0;
+  border-radius: 10px;
+}
+.column img{
+  width: 100%;
+  height: 200px;
+}
+.column h3{
+  font-size: 20px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.column p{
+  font-size: 15px;
+  color: #777;
+  padding-left: 13px;
+}
+.column a{
+  padding-left: 14px;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Left Panel */
+.left-panel {
+  background: linear-gradient(to right, #4b0082, #6a0dad);
+  color: white;
+  padding: 40px;
+  width: 40%;
+}
+
+.left-panel h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.left-panel p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.small-text {
+  font-size: 12px;
+  margin-top: 30px;
+  opacity: 0.8;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 60%;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background: linear-gradient(to right, #4b0082, #6a0dad);
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #4b0082;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.contact .co{
+  font-size: 45px;
+  color: #444;
+  padding-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6a0dad;
+}
